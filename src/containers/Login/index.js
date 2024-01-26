@@ -15,8 +15,8 @@ export default function Login({ navigation }) {
     axios
       .get(BASE_URL + '/server', {
         auth: {
-          username: userData.login,
-          password: userData.password,
+          username: user,
+          password: userPassword,
         },
       })
       .then(function (response) {
